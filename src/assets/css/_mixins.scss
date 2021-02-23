@@ -1,0 +1,49 @@
+@mixin border-radius($v) {
+  -webkit-border-radius: $v;
+  -moz-border-radius: $v;
+  border-radius: $v;
+}
+@mixin display($display: unset, $justify: unset, $align: unset, $text: unset) {
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
+  text-align: $text;
+}
+@mixin position(
+  $position,
+  $top: unset,
+  $left: unset,
+  $bottom: unset,
+  $right: unset
+) {
+  position: $position;
+  top: $top;
+  left: $left;
+  bottom: $bottom;
+  right: $right;
+}
+@mixin box-shadow($props) {
+  -webkit-box-shadow: $props;
+  -moz-box-shadow: $props;
+  box-shadow: $props;
+}
+@mixin transform($props) {
+  -moz-transform: $props;
+  -webkit-transform: $props;
+  -o-transform: $props;
+  -ms-transform: $props;
+  transform: $props;
+}
+@mixin size($height, $width) {
+  height: $height;
+  width: $width;
+}
+@mixin sameSize($size) {
+  height: $size;
+  width: $size;
+}
+@mixin appearance {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
